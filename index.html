@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect With Moiz - Where Ideas Become Websites</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Images/logo.png " type="image/x-icon">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/Additional CSS & JS/style.css">
+
+</head>
+
+<body>
+    <!-- header section -->
+    <div class="header" id="header">
+
+        <div class="cont">
+            <!-- nav section -->
+            <div class="nav">
+                <div class="log">
+                    <img src="\Images/logo.png" alt="" class="loimg">
+                    <img id="mode_icon" src="/Images/light_icon.svg" alt="">
+                </div>
+                <div class="ul">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#profile">Projects</a></li>
+                        <li><a href="#about">About Me </a></li>
+                        <li><a href="#service">Facilities</a></li>
+                        <img src="Images/close.png" alt="" class="close" onclick="closemenu()">
+                    </ul>
+                    <img src="Images/menu.png" alt="" class="menu" onclick="openmenu()">
+                </div>
+                <!-- header poster section -->
+            </div>
+            <div class="header_text">
+                <h3>I am a <span class="auto"></span></h3>
+                <h1>Hi , I'm <span>Moiz</span> <br> From Pakistan</h1>
+            </div>
+        </div>
+    </div>
+    <!-- main section  -->
+    <div class="container">
+        <!-- about section  -->
+        <div id="about">
+            <div class="row">
+                <div class="col-1">
+                    <!-- image  -->
+                    <img src="Images/Portifolio.png" alt="">
+                </div>
+                <div class="col-2">
+                    <!-- content  -->
+                    <h1 class="ab_h">About me</h1>
+                    <p class="ab_para">I am an industrious student based in <span>Pakistan</span> with a robust academic
+                        background. As the present academic year draws to a close, I am keen to explore fresh prospects
+                        in <span>Web</span> and <span>Python</span> development. My proficiency in Python
+                        <span>programming</span> and <span>expertise</span> in web development enable me to create
+                        <span>websites</span>that are not only visually appealing but also highly
+                        <span>functional</span>.
+                    <div class="tap">
+                        <h1 class="tap-links active-link" onclick="opentab(`Facilities`)">Facilities</h1>
+                        <h1 class="tap-links" onclick="opentab(`Experience`)">Experience</h1>
+                        <h1 class="tap-links" onclick="opentab(`Tool`)">Skills</h1>
+                    </div>
+                    <div class="faci  tab-contents active-tab " id="Facilities">
+                        <ul>
+                            <li>Unlimited Revisions</li>
+                            <li class="yl"> After Sale Support</li>
+                            <li> 14 Days free Website Customization</li>
+                            <li class="yl">Responsive design for all devices.</li>
+                            <li> Bugs-free code</li>
+                            <li class="yl"> 24/7 Support</li>
+                            <li> 100% Satisfaction</li>
+                            <li class="yl">Eager to learn & team player</li>
+
+                        </ul>
+                    </div>
+                    <div class="exp  tab-contents" id="Experience">
+                        <ul>
+                            <li class="yl">Web Design </li>
+                            <li>2 years Experience</li>
+                            <li class="yl">Python Developer</li>
+                            <li>1 year Experience</li>
+                        </ul>
+                    </div>
+                    <div class="tool con tab-contents" id="Tool">
+                        <div class="skill">
+                            <div>
+                                <h1>HTML</h1>
+                                <img class="star_img" src="Images/stars.svg" alt="">
+                            </div>
+                            <div>
+                                <h1>CSS</h1>
+                                <img class="star_img" src="Images/stars.svg" alt="">
+                            </div>
+                            <div>
+                                <h1>JavaScritp</h1>
+                                <img class="star_img" src="Images/stars.svg" alt="">
+                            </div>
+                            <div>
+                                <h1>Python</h1>
+                                <img class="star_img" src="Images/stars.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="service" id="service">
+            <div class="service-container">
+                <h1 class="ab_h">Services</h1>
+                <div class="services">
+                    <div class="each">
+                        <h1>Web Development</h1>
+                        <p class="each_text" id="web"> I specialize in crafting top-notch websites that not only look
+                            stunning but also excel in search engine optimization (SEO)....
+                        </p>
+                        <a class="each_a" onclick="addText(`web`,0)">Learn More</a>
+                    </div>
+                    <div class="each">
+
+                        <h1>Python</h1>
+                        <p class="each_text" id="py"> I specialize in Python development, delivering robust, efficient,
+                            and scalable solutions tailored to your specific needs...
+                        </p>
+                        <a class="each_a" onclick="addText(`py`,1)">Learn More</a>
+                    </div>
+                    <div class="each">
+
+                        <h1>Web scraping</h1>
+                        <p class="each_text" id="scraping">I excel in web scraping, harnessing the capabilities of
+                            Python to extract valuable data from websites efficiently and accurately...
+                        </p>
+                        <a class="each_a" onclick="addText(`scraping`,2)">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="profile" id="profile">
+            <h1 class="ab_h">Projects Snaps</h1>
+            <section id="tranding">
+
+                <div class="container_project">
+                    <div class="swiper tranding-slider">
+                        <div class="swiper-wrapper">
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                    <video src="Videos/Educator.mp4" loop autoplay alt="Tranding">
+                                </div>
+
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                    <video src="Videos/Fashionova.mp4" loop autoplay alt="Tranding">
+                                </div>
+
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                    <video src="Videos/food.mp4" loop autoplay alt="Tranding">
+                                </div>
+
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                    <img src="Images/social.png" alt="Tranding">
+                                </div>
+
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                    <img src="Images/Tic.png" alt="Tranding">
+                                </div>
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                    <video src="Videos/Fashionova.mp4" loop autoplay alt="Tranding">
+                                </div>
+
+                            </div>
+                            <!-- Slide-end -->
+                            <!-- Slide-start -->
+                            <div class="swiper-slide tranding-slide">
+                                <div class="tranding-slide-img">
+                                    <img src="/Images/vid.png" alt="Tranding">
+                                </div>
+                            </div>
+                            <!-- Slide-end -->
+                        </div>
+
+                        <div class="tranding-slider-control">
+                            <div class="swiper-button-prev slider-arrow">
+                                <ion-icon name="arrow-back-outline"></ion-icon>
+                            </div>
+                            <div class="swiper-button-next slider-arrow">
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <div class="certificates">
+            <h1>Certificates</h1>
+            <div class="cerimages">
+                <div class="shown">
+                    <img src="Images/PYM.jpg" id="shown" alt="">
+                </div>
+                <div class="smallimg">
+                    <img class="small_img" src="Images/PYM.jpg" alt="">
+                    <img class="blur small_img" src="Images/PYSR.jpg" alt="">
+                    <img class="blur small_img" src="/Images/PyCertificate.png" alt="">
+                    <img class="blur small_img" src="/Images/CodeLearn_certification.png" alt="">
+                </div>
+            </div>
+
+
+        </div>
+        <div class="contact">
+            <div class="contact-left">
+                <h1>Contact Me</h1>
+                <div class="icons">
+                    <div class="icon">
+                        <span class="material-symbols-outlined">send</span>
+                        <h1>webkaro00@gmail.com</h1>
+                    </div>
+                    <div class="icon">
+                        <span class="material-symbols-outlined">headset_mic </span>
+                        <h1>083209382094</h1>
+                    </div>
+                </div>
+            </div>
+            <form action="" name="submit-to-google-sheet">
+                <div class="contact-right">
+                    <input type="text" name="Name" placeholder="Name" required>
+                    <input type="email" name="Email" placeholder="Enter your Mail" id="" required>
+                    <TEXtarea class="text" name="Massege" placeholder="Enter your massege here "></TEXtarea>
+                    <button>Submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+
+    </div>
+    <div class="footer">
+        <h3>Copyrigth &copy are reserved by Conect with Moiz </h3>
+        <h4>For any issue connect with them</h4>
+    </div>
+    </div>
+    </div>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzkcHN1dAILMLJUex6lYShBson4oU4dAnNr7Uy4zdkNMme2VkAUZ7HyNwhHaHwgqe9q/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent succesfully!!"
+                    setTimeout(function () {
+                        msg.innerHTML = ``
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto", {
+            strings: ["Coder", "Web Developer", "Programmer", "Python Developer", "JS Developer", "Web designer",
+            ],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true
+        })
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="Additional CSS & JS/script.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
